@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    background-image: url(image.png);
+    background-size: 100%;
+    background-repeat:round;
+    background-attachment: fixed;
+    
+}
+html {
+    overflow-y: scroll; 
+    height: 100%; 
+    
+}
+
+.container {
+    display: flex;
+   min-height: 100vh;
+   
+}
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #532d2d;
+    transition: left 0.3s ease; 
+    padding-top: 20px;
+}
+
+.sidebar.active {
+    left: 0; 
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: disc;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+.sidebar ul li a:hover {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}
+
+#hamburger-menu, #hamburger-inside {
+    height: 80px;
+    margin: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+#hamburger-inside {
+    height: 80px;
+    margin: 0px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#hamburger-menu {
+    margin-top: 60px;
+}
+
+.content {
+    margin-top: 20px;
+    background: #3498db;
+    padding: 20px 30px;
+    flex: 1;
+    
+    background-color:  rgba(255, 255, 255, 0.8);
+    margin-left: 50px;
+    margin-right: 80px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.event-description {
+    line-height: 25px;
+}
+
+#event2 {
+    display: block;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+    height: 218px;
+}
+
+#hamburger-menu {
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.leftsection {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+img {
+   
+    overflow: clip;
+}
+
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+
+}
+
+.image3 {
+    width: 399px;
+    height: 250px;
+}
+
+.image2 {
+    float: right;
+    height: 218px;
+    width: 399px;
+    padding-bottom: 30px;
+}
